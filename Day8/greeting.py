@@ -1,5 +1,5 @@
 def greet(greeting, location):
-    print ("Hello "+greet)
+    print ("Hello "+greeting)
     print ("location: "+location)
     print (f"Name is {greeting} and your location is {location}")
 
