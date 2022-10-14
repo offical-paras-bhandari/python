@@ -1,4 +1,3 @@
-import imp
 from art import logo
 import os
 def clear():
@@ -15,7 +14,7 @@ shouldContiue=True
 while shouldContiue:
     name = input("What is your name?: ")
     bid = int(input("What's your bid?: $"))
-    halt=input("Are there any other jbidders? Type 'yes' or 'no'.")
+    halt=input("Are there any other bidders? Type 'yes' or 'no'.")
     if halt=="no":
         shouldContiue=False
     clear()
