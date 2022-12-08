@@ -10,11 +10,11 @@ with open("my_file.txt") as file:
     print(content)
 
 # Writing
-with open("my_file.txt",mode="w") as file:
+with open("my_file.txt", mode="w") as file:
     file.write("i love you\n")
 
 # appending
-with open("my_file.txt",mode="a") as file:
+with open("my_file.txt", mode="a") as file:
     file.write("i love you")
 
 
