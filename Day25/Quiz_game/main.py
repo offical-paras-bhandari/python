@@ -16,11 +16,7 @@ while len(guessed_stated) < 50:
     answer_state = turtle.textinput(title=f"{len(guessed_stated)}/50 Guess the State",
                                     prompt="What's another state name").title()
     if answer_state == "Exit":
-        missing_list = []
-        for state in all_states:
-            if state not in guessed_stated:
-                missing_list.append(state)
-        print(missing_list)
+        missing_list = [state for state in all_states if state not in guessed_stated]
         new_data = pandas.DataFrame(missing_list)
         new_data.to_csv("states_to_learn.csv")
         break
